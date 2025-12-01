@@ -124,6 +124,8 @@ if (isset($conn) && isset($_SESSION['admin_connecte']) && $_SESSION['admin_conne
                 <input type="password" name="motdepasse" required><br><br>
                 <button type="submit" name="connexion">Se connecter</button>
             </form>
+              <!-- Bouton de retour -->
+    <a href="../index.php" class="btn-retour" style="display:inline-block; margin-top:10px;">Retour</a>
         </div>
     <?php endif; ?>
 
@@ -186,3 +188,4 @@ if (isset($conn) && isset($_SESSION['admin_connecte']) && $_SESSION['admin_conne
 <?php endif; ?>
 </body>
 </html>
+
