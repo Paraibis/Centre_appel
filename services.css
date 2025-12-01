@@ -1,0 +1,412 @@
+.grille-formations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.carte-formation {
+    display: flex;
+    background-color: #f2f6fb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.carte-formation:hover {
+    transform: translateY(-5px);
+}
+
+.image-formation {
+    width: 35%;
+    min-width: 150px;
+    height: 100%;
+}
+
+.image-formation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.infos-formation {
+    padding: 20px;
+    width: 65%;
+    font-family: 'Segoe UI', sans-serif;
+    color: #0e2a47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos-formation h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #0e2a47;
+}
+
+.infos-formation p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.btn-inscrire {
+    margin-top: 15px;
+    background-color: #0e79b2;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.btn-inscrire:hover {
+    background-color: #095d85;
+}
+
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    font-size: 24px;
+    color: #003366;
+}
+
+nav {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+.btn-login {
+    margin-left: 20px;
+    background: #ff7f00;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    background: #d0d7da;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.logo-titre {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-left: 20px; /* ✅ Espace entre le bord gauche et le logo */
+}
+
+
+.logo-header {
+    height: 40px;
+    margin-right: 10px;
+}
+/* ============ Barre de recherche ============ */
+.recherche {
+  background: #c4e6ff;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.formulaire-recherche {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.formulaire-recherche input[type="text"] {
+  width: 260px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.formulaire-recherche button {
+  padding: 10px 20px;
+  background: #7bb6d6;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulaire-recherche button:hover {
+  background: #e56f00;
+}
+.recherche {
+    margin-top: 20px; /* ✅ pour créer un petit espace avec le menu */
+}
+
+.boutons-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-inscrire,
+.btn-programme {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-inscrire {
+    background: #ff7f00;
+    color: white;
+}
+
+.btn-inscrire:hover {
+    background: #e46f00;
+}
+
+.btn-programme {
+    background: #003366;
+    color: white;
+}
+
+.btn-programme:hover {
+    background: #001f4d;
+}
+
+
+
+.pied-de-page {
+    background-color: #003366;
+    color: blanc;
+    padding: 40px 20px 10px;
+    font-family: Arial, sans-serif;
+}
+
+.contenu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bloc {
+    width: 230px;
+    margin-bottom: 30px;
+}
+
+.bloc h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.bloc p {
+    margin: 5px 0;
+    color: #dddddd;
+   font-size: 15px;
+}
+
+.logo-footer {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.formulaire-newsletter input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.formulaire-newsletter button {
+    background-color: #f1c40f;
+    color: noir;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulaire-newsletter button:hover {
+    background-color: #e0b000;
+}
+
+.reseaux-sociaux {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.reseaux-sociaux p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.reseaux-sociaux .fleche {
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.reseaux-sociaux .icones {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.reseaux-sociaux .icones img {
+    width: 32px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.reseaux-sociaux .icones img:hover {
+    transform: scale(1.2);
+}
+
+
+.bas-footer {
+    text-align: center;
+    color: #cccccc;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+
+.titre-section {
+    font-size: 26px;
+    color: #003366;
+    margin-bottom: 10px;
+    color: #003366; /* ou la même couleur que "Nos partenaires" */
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.titre-section::after {
+      content: "";
+    display: block;
+    width: 120px; /* augmenté ici */
+    height: 4px;
+    background-color: #003366;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+
+/* ----------- Responsive Mobile ----------- */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  form, .formulaire, .programme-container, .content-box {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  input, select, textarea, button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    font-size: 14px;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  .logo-titre {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .btn-login {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .programme-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .success-message {
+    font-size: 16px;
+    text-align: center;
+  }
+}

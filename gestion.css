@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f9fc;
+    color: #333;
+}
+
+
+.conteneur-admin {
+    width: 95%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.08);
+}
+
+
+h2, h3 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.boite-formulaire {
+    background-color: #e6f2ff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #cce0ff;
+    margin-bottom: 30px;
+}
+
+.boite-formulaire input,
+.boite-formulaire textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.boite-formulaire button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.boite-formulaire button:hover {
+    background-color: #002244;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+}
+
+.erreur {
+    color: #d8000c;
+    background: #ffd2d2;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #ffbaba;
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0055aa;
+}
+
+
+.menu-admin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.carte {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #cce0ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.carte a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.carte p {
+    font-size: 15px;
+    color: #666;
+}
+
+.carte:hover {
+    background-color: #e6f2ff;
+}
+
+
+.bouton-deconnexion {
+    background: #cc0000;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    transition: 0.3s;
+}
+
+.bouton-deconnexion:hover {
+    background-color: #a30000;
+}
+
+
+.bouton-retour {
+    background-color: #777;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.bouton-retour:hover {
+    background-color: #555;
+}
+
+
+.cartes-catalogue .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.carte {
+    width: 260px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 2px solid #d7e7f5;
+}
+
+.carte .categorie {
+    color: #0e79b2;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.carte .titre {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #003366;
+}
+
+.carte .lieu-date,
+.carte .montant {
+    color: #555;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.bouton-carte {
+    background: #0098d7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 12px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.bouton-carte:hover {
+    background: #007ab0;
+}
+
+
+.plus-formations {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.bouton-plus {
+    background: #ff7f00;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.bouton-plus:hover {
+    background: #e56c00;
+}
+
+.btn-retour-admin {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #0249b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.btn-retour-admin:hover {
+    background-color: #013580;
+}
+
